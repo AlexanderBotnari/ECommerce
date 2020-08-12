@@ -7,7 +7,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Category {
+public class Category implements Serializable{
   
 	private String name;
 
