@@ -2,7 +2,7 @@ package domain;
 
 import java.util.Date;
 
-public class Product {
+public class Product implements Serializable{
     
 	private Integer  id;
 	private String   name;
