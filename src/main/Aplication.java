@@ -23,13 +23,16 @@ public class Aplication {
 //		ProductFactory.getInstance();
 //		Product product1 = ProductFactory.getProduct("Iphone 11 pro",new Money("$",1000f) , 4,
 //	    		new Faker().date().birthday(1, 10) ,"FSA", "Phones");
+		
 		Money money = new Money("USD",300f);
 		DataRepository.getInstance().save(money);
 		money = DataRepository.getInstance().load(Money.class);
 		System.out.println(money);
+		
 		DataRepository.getInstance().save(product);
-        product = DataRepository.getInstance().load(Product.class);
-        System.out.println(product);
+                product = DataRepository.getInstance().load(Product.class);
+                System.out.println(product);
+		
 //		ProductFactory.getInstance();
 //		List<Product> fakeProducts = ProductFactory.getManyFakeProducts(5);
 //		
