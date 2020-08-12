@@ -9,7 +9,7 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Currency {
+public class Currency implements Serializable{
 
 	public static Currency baseCurrency = new Currency (
 	        "EUR",
