@@ -7,7 +7,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Money {
+public class Money implements Serializable{
 
 	private static CurrencyProvider currencyProvider = new CurrencyProvider();
 	
